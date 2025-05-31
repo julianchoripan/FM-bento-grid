@@ -188,38 +188,38 @@ img {
 
 /*seventh card*/
 
-.second-cards-grid .cards:first-child {
+.cards.cards:nth-child(7) {
   text-align: left;
   padding: 30px;
   background-color: var(--yellow100);
   align-items: flex-start;
 }
 
-.second-cards-grid .cards:first-child span {
+.cards.cards:nth-child(7) span {
   color: var(--purple500);
 }
 
-.second-cards-grid .cards:first-child h2 {
+.cards.cards:nth-child(7) h2 {
   font-size: 1.75rem;
   margin-bottom: 20px;
 }
 
-.second-cards-grid .cards:first-child img {
+.cards.cards:nth-child(7) img {
   width: 60%;
 }
 
 /*eight card*/
 
-.second-cards-grid .cards:nth-child(2) {
+.cards:nth-child(8) {
   background-color: var(--yellow500);
 }
 
-.second-cards-grid .cards:nth-child(2) h2 {
+.cards:nth-child(8) h2 {
   font-size: 1.75rem;
   margin-bottom: 20px;
 }
 
-.second-cards-grid .cards:nth-child(2) img {
+.cards:nth-child(8) img {
   width: 70%;
   border-radius: 0;
   box-shadow: none;
