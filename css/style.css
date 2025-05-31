@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple100: hsl(254, 88%, 90%);
+  --purple500: hsl(256, 67%, 59%);
+
+  --yellow100: hsl(31, 66%, 93%);
+  --yellow500: hsl(39, 100%, 71%);
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+
+  --bgcolor: hsl(0, 0%, 96%);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif; /*weights: 400, 500*/
+  background-color: var(--bgcolor);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -1.8px;
+  line-height: 1;
+  color: var(--black);
+}
+
+p {
+  font-weight: 400;
+  line-height: 1;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+.main-grid-wrapper {
+  display: grid;
+  gap: 30px;
+}
+
+.second-cards-grid,
+.cards-grid {
+  display: grid;
+  gap: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/*first card*/
+
+.cards:first-child {
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background-color: var(--purple500);
+}
+
+.cards:first-child span {
+  color: var(--yellow500);
+}
+
+.cards:first-child img {
+  width: 70%;
+}
+
+.cards:first-child p {
+  color: var(--white);
+}
+
+/*second card*/
+
+.cards:nth-child(2) {
+  background-color: var(--white);
+}
+
+.cards:nth-child(2) img {
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+
+  border-radius: 40px;
+}
+
+/*third card*/
+
+.cards:nth-child(3) {
+  background-color: var(--yellow500);
+}
+
+.cards:nth-child(3) h2 {
+  margin-bottom: 15px;
+}
+
+.cards:nth-child(3) img {
+  width: 70%;
+  transform: translateY(30%);
+  margin-top: -50px;
+}
+
+/*fourth card*/
+
+.cards:nth-child(4) {
+  background-color: var(--purple100);
+}
+
+.cards:nth-child(4) p,
+.cards:nth-child(4) h2 {
+  text-align: center;
+}
+
+.cards:nth-child(4) h2,
+.cards:nth-child(4) img {
+  margin-bottom: 20px;
+}
+
+/*fifth card*/
+
+.cards:nth-child(5) {
+  text-align: center;
+  padding: 20px 70px;
+  background-color: var(--purple500);
+}
+
+.cards:nth-child(5) img {
+  margin-bottom: 30px;
+}
+
+.cards:nth-child(5) h2 {
+  font-weight: 500;
+  color: var(--white);
+}
+
+/*sixth card*/
+
+.cards:nth-child(6) {
+  background-color: var(--white);
+}
+
+.cards:nth-child(6) h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cards:nth-child(6) p {
+  margin-bottom: 20px;
+}
+
+.cards:nth-child(6) img {
+  width: 60%;
+}
+
+/*seventh card*/
+
+.second-cards-grid .cards:first-child {
+  text-align: left;
+  padding: 30px;
+  background-color: var(--yellow100);
+  align-items: flex-start;
+}
+
+.second-cards-grid .cards:first-child span {
+  color: var(--purple500);
+}
+
+.second-cards-grid .cards:first-child h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.second-cards-grid .cards:first-child img {
+  width: 60%;
+}
+
+/*eight card*/
+
+.second-cards-grid .cards:nth-child(2) {
+  background-color: var(--yellow500);
+}
+
+.second-cards-grid .cards:nth-child(2) h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.second-cards-grid .cards:nth-child(2) img {
+  width: 70%;
+  border-radius: 0;
+  box-shadow: none;
+}
